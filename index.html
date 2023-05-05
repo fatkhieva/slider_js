@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Yeseva+One&display=swap" rel="stylesheet">
+    <title>Slider</title>
+</head>
+<body>
+    <section class="bg-black">
+        <div class="container">
+            <div class="completed-block">
+                <div class="completed-links">
+                    <ul class="city">
+                        <li ><a href="#" onclick="setActive(0)" class="active" >Rostov-on-Don, Admiral</a></li>
+                        <li ><a href="#" onclick="setActive(1)">Sochi Thieves</a></li>
+                        <li ><a href="#" onclick="setActive(2)">Rostov-on-Don Patriotic</a></li>
+                    </ul>
+                </div>
+                <div class="completed-info">
+                    <div class="completed-description">
+                        <h2 class="completed-title">COMPLETED <br>PROJECTS <hr class="line"></h2>
+                        
+                        <p class="completed-text">
+                            Only a small part of the work performed by our company is presented 
+                            on the site. For 14 years on in the construction <br>
+                            market we have made happy more than 1000 families
+                        </p>
+
+                        <div class="completed-properties">
+                            <div class="completed-property">
+                                <h3 class="property-title color-primary">City:</h3>
+                                <p class="property-value city">
+                                    Rostov-on-Don <br>
+                                    LCD admiral
+                                </p>
+                            </div>
+                            <div class="completed-property">
+                                <h3 class="property-title color-primary">apartment area:</h3>
+                                <p class="property-value apartment-area">81 m2</p>
+                            </div>
+                            <div class="completed-property">
+                                <h3 class="property-title color-primary">Repair time:</h3>
+                                <p class="property-value repair-time">3.5 months</p>
+                            </div>
+                            <div class="completed-property">
+                                <h3 class="property-title color-primary">Repair Cost:</h3>
+                                <p class="property-value">Upon request</p>
+                            </div>
+                        </div>
+
+                        <div class="completed-controls">
+                            <span class="control-left-arrow"></span>
+                            <span onclick="setActive(0)" class="control-spot active"></span>
+                            <span onclick="setActive(1)" class="control-spot"></span>
+                            <span onclick="setActive(2)" class="control-spot"></span>
+                            <span class="control-right-arrow"></span>
+                        </div>
+                        
+                    </div>
+                    <div class="completed-picture">
+                        <img class="img" src="img/image_1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-black"></section>
+    <section class="bg-black"></section>
+    <script src="js.js"></script>
+</body>
+</html>
